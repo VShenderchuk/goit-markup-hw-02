@@ -87,22 +87,28 @@
     text-decoration: none;
 }
 
-.site-nav.link {
+
+/* Class for all web links (blue-black)*/
+
+.links:link,
+.links:visited {
     color: var(--title-text-color);
+}
+
+.links:hover,
+.links:focus {
+    color: var(--accent-color);
+}
+
+.links {
+    text-decoration: none;
+}
+
+.site-nav {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--title-text-color);
 }
 
 .mail {
